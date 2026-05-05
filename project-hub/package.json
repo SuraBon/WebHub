@@ -1,17 +1,22 @@
 {
   "name": "project-hub",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://yourusername.github.io/project-hub/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "lucide-react": "1.14.0",
+    "tailwindcss": "4.2.4",
+    "@tailwindcss/vite": "4.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
